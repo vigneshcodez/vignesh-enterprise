@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainB{
+  border-top: 1px solid rgba(2, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.mainBox{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+
+.carLogo{
+  width: 15%;
+}
+.searchBox{
+  width: 60%;
+}
+.cartandheart{
+  width: 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.cartLogo,.heartLogo,.menuLogo{
+  color: green;
+  font-size: 30px;
+}
+.customSearch{
+  background-color: rgba(0, 0, 0, 0.050);
+  border-radius: 5px 0 0 5px;
+  padding: 10px;
+}
+
+.customSearchBtn{
+  background-color: green;
+  color: white;
+  border-radius: 0px 5px 5px 0;
+  border: 2px solid transparent;
+}
+.customSearchBtn:hover{
+  background-color: black;
+}
+
+
+
+
