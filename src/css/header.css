@@ -1,0 +1,32 @@
+.languageContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16vw;
+  padding: 2px;  
+}
+.languageText{
+  margin: 0 auto;
+}
+.indiaFlag{
+  width: 25px;
+  padding-right: 5px;
+}
+.languageButton{
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.mainContainer{
+  display: flex;
+}
+
+.cartAndLoginContainer{
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.subOfCartAndLoginContainer{
+  margin: 0 auto;
+}

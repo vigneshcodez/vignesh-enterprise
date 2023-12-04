@@ -1,52 +1,131 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.mainContainer{
+  width: 100%;
 }
 
-.mainB{
-  border-top: 1px solid rgba(2, 0, 0, 0.2);
+.wensiteViewNavBar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
-
-.mainBox{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-bottom: 10px;
-  padding-top: 10px;
+.menuLogo{
+  display: none;
 }
-
-
-.carLogo{
+.websiteLogo{
   width: 15%;
+  padding: 20px;
 }
-.searchBox{
-  width: 60%;
+.searchIcon{
+  display: none;
 }
-.cartandheart{
-  width: 10%;
-  display: flex;
-  justify-content: space-evenly;
+
+/* input form in navbar starts */
+.searchBoxContainer{
+  width: 70%;
 }
-.cartLogo,.heartLogo,.menuLogo{
-  color: green;
-  font-size: 30px;
-}
-.customSearch{
-  background-color: rgba(0, 0, 0, 0.050);
+.searchInputBox{
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px 0 0 5px;
   padding: 10px;
 }
-
-.customSearchBtn{
+.searchButton{
   background-color: green;
   color: white;
   border-radius: 0px 5px 5px 0;
-  border: 2px solid transparent;
+  border: 2px solid green;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.customSearchBtn:hover{
+.searchButton:hover{
   background-color: black;
+  border: 2px solid black;
+}
+.searchText{
+  margin: 0 auto;
+  padding-right: 5px;
+  font-size: 0.8rem;
+}
+.searchIconInsideNav{
+  font-size: 1rem;
+  margin: 0 auto;
+}
+/* input form in navbar ends*/
+
+
+.cartandheart{
+  width: 8%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cartLogo,.heartLogo,.searchIcon{
+  font-size: 1.7rem;
+  color: green;
+}
+
+.sideBar{
+  display: none;
+}
+
+
+@media only screen and (max-width: 720px) {
+
+  .searchBoxContainer{
+    display: none;
+  }
+  .wensiteViewNavBar{
+    justify-content: space-around;
+  }
+  .menuLogo{
+    display: block;
+    font-size: 1.7rem;
+    color: green;
+    width: 10vw;
+  }
+  .websiteLogo{
+    width: 30vw;
+  }
+  .cartandheart{
+    width: 30vw;
+  }
+
+
+  .sideBar{
+    height: 100vh;
+    width: 80%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    overflow: scroll;
+    background-color: white;
+    box-shadow: 12px 4px 10px 1px #969696;
+  }
+  .carLogoOnMobile{
+    width: 30%;
+    padding: 10px 0 10px 0;
+    align-self: center;
+  }
+  .sideBarItems{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  }
+  .insidebar{
+    position: absolute;
+    top: 0;
+    margin-top: 4%;
+    margin-left: 85%;
+  }
+
+  .carLogo{
+    align-self: center;
+  }
 }
 
 
